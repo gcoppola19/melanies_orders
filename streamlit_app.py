@@ -9,7 +9,7 @@ st.write(
   """
 )
 
-cns = st.connection("snowflake")
+cnx = st.connection("snowflake")
 session = cnx.session()
 my_dataframe = session.table("smoothies.public.orders")
 
